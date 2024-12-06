@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'RetroFont';
+    src: url('@/assets/8bit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background-color: #1c1c1c;
+}
+
+body {
+    font-family: 'RetroFont' !important;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.v-btn {
+    background-color: #ff00ff;
+    border: 4px solid #00ff00;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 0px #000, -2px -2px 0px #000;
+    transition: all 0.2s;
+    width: fit-content !important;
+    height: fit-content !important;
+    border-radius: 0;
+}
+
+.v-btn:hover {
+    background-color: #00ff00;
+    color: #ff00ff;
+    border-color: #ff00ff;
+    transform: scale(1.1);
+}
+
+.v-icon {
+    font-size: 32px;
+    color: #ff00ff;
+    text-shadow: 2px 2px 0px #000;
+}
+
+.v-card {
+    background-color: #222;
+    border: 5px solid #ff00ff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 3px 0px #000;
+    width: fit-content !important;
+    border-radius: 0;
+}
+
+.v-card-title {
+    font-size: 24px;
+    text-align: center;
+    color: #00ff00;
+}
+
+.v-text-field input {
+    background-color: #333;
+    border: 2px solid #ff00ff;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.v-text-field input:focus {
+    border-color: #00ff00;
+    outline: none;
+}
+
+.v-chip {
+    background-color: #ff00ff;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 0;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.v-chip:hover {
+    background-color: #00ff00;
+    transform: scale(1.1);
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking-text {
+    animation: blink 1s infinite;
+}
+
+.v-btn,
+.v-card,
+.v-chip,
+.v-text-field {
+    image-rendering: pixelated;
+    /* Effet de pixelisation */
+}
+
+.v-btn,
+.v-card,
+.v-chip {
+    box-shadow: 2px 2px 0px #000, -2px -2px 0px #000;
+}
+
+@keyframes rotateBackground {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.rotating-background {
+    animation: rotateBackground 3s linear infinite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
